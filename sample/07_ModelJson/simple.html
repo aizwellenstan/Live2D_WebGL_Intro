@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+            <title>model.jsonロード</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=4.0">
+    </head>
+    <body onload="Simple()">
+        <h2>model.jsonロード</h2>
+        <!-- 選択ボタン -->
+        <span style="font-size:14px;">モーション選択</span>
+        <select id="selectmenu" onchange="motionChange()"></select>
+        <br>
+        <canvas id="glcanvas" style="border:dashed 1px #CCC"></canvas>
+        <!-- Live2D Library -->
+        <script src="../../lib/live2d.min.js"></script>
+        <!-- Live2Dの便利機能が入ったクラス群 -->
+        <script src="../../framework/Live2DFramework.js"></script>
+        <!-- Live2Dモデルやテクスチャロード管理クラス -->
+        <script src="src/PlatformManager.js"></script>
+        <!-- Live2Dモデルの生成やチェンジを行うクラス -->
+        <script src="src/LAppLive2DManager.js"></script>
+        <!-- メイン処理クラス -->
+        <script src="src/Simple.js"></script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+            <title>パラメータ操作</title>
+        </meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=4.0">
+        </meta>
+    </head>
+
+    <body onload="Simple()">
+        <h2>パラメータ操作</h2>
+        <canvas id="glcanvas" style="border:dashed 1px #CCC"></canvas>
+        <div id="myconsole" style="color:#BBB">---- Log ----</div>
+        PARAM_X<input type="range" id="L2D_X" value="0.0" min="-30.0" max="30.0" step="1.0">
+        PARAM_Y<input type="range" id="L2D_Y" value="0.0" min="-30.0" max="30.0" step="1.0">
+        <br>
+        サイズ<input type="range" id="SCALE" value="1.5" min="0.0" max="5.0" step="0.1">
+        <br>
+        位置X<input type="range" id="POS_X" value="0.0" min="-3.0" max="3.0" step="0.1">
+        <br>
+        位置Y<input type="range" id="POS_Y" value="0.0" min="-3.0" max="3.0" step="0.1">
+        <!-- Live2D Library -->
+        <script src="../../lib/live2d.min.js"></script>
+        <script src="../../framework/Live2DFramework.js"></script>
+        <!-- User's Script -->
+        <script src="src/Simple.js"></script>
+    </body>
+</html>
